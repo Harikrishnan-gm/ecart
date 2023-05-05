@@ -16,7 +16,7 @@ const cors=require('cors')
 require('./db/connection')
 
 // to store port number
-const PORT=3000
+const PORT=3000 || process.env.PORT
 
 // use in server app
 server.use(cors())
